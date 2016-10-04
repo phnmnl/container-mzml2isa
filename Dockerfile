@@ -11,7 +11,7 @@ RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip &
 
 ENV WRAPPER_REVISION aebde21cd2c21a09f138abb48bea19325b91d304
 
-RUN apt-get -y update && apt-get -y install --no-install-recommends curl && \
+RUN apt-get -y update && apt-get -y install --no-install-recommends curl zip && \
     curl https://raw.githubusercontent.com/ISA-tools/mzml2isa-galaxy/$WRAPPER_REVISION/galaxy/mzml2isa/wrapper.py -o /usr/local/bin/wrapper.py && \
     curl https://raw.githubusercontent.com/ISA-tools/mzml2isa-galaxy/$WRAPPER_REVISION/galaxy/mzml2isa/pub_role.loc -o /usr/local/bin/pub_role.loc && \
     curl https://raw.githubusercontent.com/ISA-tools/mzml2isa-galaxy/$WRAPPER_REVISION/galaxy/mzml2isa/pub_role.loc -o /usr/local/bin/pub_status.loc && \
