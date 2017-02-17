@@ -7,7 +7,7 @@ LABEL software="mzml2isa"
 
 RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip && \
     pip install --upgrade pip && pip install -U setuptools && pip install six && \
-    pip install mzml2isa==0.5.1 && \
+    pip install mzml2isa==0.4.28 && \
     pip uninstall -y pip && \
     apt-get purge -y python-pip && \
     apt-get install --no-install-recommends python && \
