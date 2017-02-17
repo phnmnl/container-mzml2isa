@@ -1,7 +1,7 @@
 ![Logo](logo.png)
 
 # mzml2isa
-Version: 1.0.0
+Version: 0.4.28 
 
 ## Short Description
 
