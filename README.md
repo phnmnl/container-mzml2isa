@@ -27,11 +27,13 @@ mzml2isa is a Python3 program that can automatically generate ISA-Tab document s
 
 ## Tool Authors
 
-- Martin Larralde
+- [Martin Larralde](https://github.com/althonos) (ENS Cachan)
+- [Thomas N. Lawson](https://github.com/Tomnl) (U. of Birmingham)
 
 ## Container Contributors
 
 - [Pablo Moreno](https://github.com/pcm32) (EMBL-EBI)
+- [Kristian Peters](https://github.com/korseby) (IPB Halle)
 
 ## Website
 
@@ -44,18 +46,22 @@ mzml2isa is a Python3 program that can automatically generate ISA-Tab document s
 
 ## Installation 
 
+This tool is preloaded in PhenoMeNal Galaxy deployments.
+
 For local individual installation:
 
 ```bash
-docker pull docker-registry.phenomenal-h2020.eu/phnmnl/mzml2isa
+docker pull container-registry.phenomenal-h2020.eu/phnmnl/mzml2isa
 ```
 
 ## Usage Instructions
 
+Available on PhenoMeNal Galaxy instances under PhenoMeNal H2020 Tools -> MS.
+
 For direct docker usage:
 
 ```bash
-docker run docker-registry.phenomenal-h2020.eu/phnmnl/mzml2isa ...
+docker run -v $PWD:/data container-registry.phenomenal-h2020.eu/phnmnl/mzml2isa -i /data/mzml_files/ -o /data/out_folder/ -s name_of_study
 ```
 
 ## Publications
