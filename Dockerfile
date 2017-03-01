@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
 LABEL software.version=0.4.28
-LABEL version=0.1
+LABEL version=0.2
 LABEL software="mzml2isa"
 
 RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip && \
