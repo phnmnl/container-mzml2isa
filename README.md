@@ -19,21 +19,28 @@ mzml2isa is a Python3 program that can automatically generate ISA-Tab document s
 
 ## Functionality
 
-- Other Tools
+- Data Management / Study Metadata Extraction from Raw Data
 
 ## Approaches
-  
+
+- Metabolomics
+- Isotopic Labelling Analysis
+
 ## Instrument Data Types
+
+- MS
 
 ## Tool Authors
 
 - [Martin Larralde](https://github.com/althonos) (ENS Cachan)
 - [Thomas N. Lawson](https://github.com/Tomnl) (U. of Birmingham)
 
+
 ## Container Contributors
 
 - [Pablo Moreno](https://github.com/pcm32) (EMBL-EBI)
 - [Kristian Peters](https://github.com/korseby) (IPB Halle)
+- [Philippe Rocca-Serra](https://github.com/proccaserra) (University of Oxford)
 
 ## Website
 
