@@ -1,9 +1,14 @@
 FROM ubuntu:16.04
-MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
+LABEL maintainer="PhenoMeNal-H2020 Project (phenomenal-h2020-users@googlegroups.com)"
 LABEL software.version=0.4.28
 LABEL version=0.2
 LABEL software="mzml2isa"
+LABEL description="Creates ISA metadata files based on a collection of mzml files."
+LABEL website="https://github.com/isa-tools/mzml2isa"
+LABEL documentation="https://github.com/isa-tools/mzml2isa-galaxy"
+LABEL license="https://github.com/isa-tools/mzml2isa/License.txt"
+LABEL tags="Metabolomics"
 
 RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip && \
     pip install --upgrade pip && pip install -U setuptools && pip install six && \
