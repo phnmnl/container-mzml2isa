@@ -1,11 +1,16 @@
 FROM ubuntu:16.04
-MAINTAINER PhenoMeNal-H2020 Project ( phenomenal-h2020-users@googlegroups.com )
 
+LABEL maintainer="PhenoMeNal-H2020 Project (phenomenal-h2020-users@googlegroups.com)"
 LABEL software.version=0.4.28
-LABEL version=0.2
+LABEL version=0.3
 LABEL software="mzml2isa"
+LABEL description="Creates ISA metadata files based on a collection of mzml files."
+LABEL website="https://github.com/isa-tools/mzml2isa"
+LABEL documentation="https://github.com/isa-tools/mzml2isa-galaxy"
+LABEL license="https://github.com/isa-tools/mzml2isa/License.txt"
+LABEL tags="Metabolomics"
 
-RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip && \
+RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip unzip && \
     pip install --upgrade pip && pip install -U setuptools && pip install six && \
     pip install mzml2isa==0.4.28 && \
     pip uninstall -y pip && \
@@ -13,7 +18,7 @@ RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip &
     apt-get install --no-install-recommends python && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV WRAPPER_REVISION aebde21cd2c21a09f138abb48bea19325b91d304
+ENV WRAPPER_REVISION 49deaaeb21ba466338a5388d1fff46b8d3cb4ee5 
 
 RUN apt-get -y update && apt-get -y install --no-install-recommends curl zip && \
     curl https://raw.githubusercontent.com/ISA-tools/mzml2isa-galaxy/$WRAPPER_REVISION/galaxy/mzml2isa/wrapper.py -o /usr/local/bin/wrapper.py && \
