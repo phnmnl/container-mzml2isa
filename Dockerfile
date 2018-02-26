@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 LABEL maintainer="PhenoMeNal-H2020 Project (phenomenal-h2020-users@googlegroups.com)"
 LABEL software.version=0.4.28
-LABEL version=0.2
+LABEL version=0.3
 LABEL software="mzml2isa"
 LABEL description="Creates ISA metadata files based on a collection of mzml files."
 LABEL website="https://github.com/isa-tools/mzml2isa"
