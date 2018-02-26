@@ -10,7 +10,7 @@ LABEL documentation="https://github.com/isa-tools/mzml2isa-galaxy"
 LABEL license="https://github.com/isa-tools/mzml2isa/License.txt"
 LABEL tags="Metabolomics"
 
-RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip && \
+RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip unzip && \
     pip install --upgrade pip && pip install -U setuptools && pip install six && \
     pip install mzml2isa==0.4.28 && \
     pip uninstall -y pip && \
