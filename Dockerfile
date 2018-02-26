@@ -18,7 +18,7 @@ RUN apt-get -y update && apt-get -y install --no-install-recommends python-pip u
     apt-get install --no-install-recommends python && \
     apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV WRAPPER_REVISION aebde21cd2c21a09f138abb48bea19325b91d304
+ENV WRAPPER_REVISION 49deaaeb21ba466338a5388d1fff46b8d3cb4ee5 
 
 RUN apt-get -y update && apt-get -y install --no-install-recommends curl zip && \
     curl https://raw.githubusercontent.com/ISA-tools/mzml2isa-galaxy/$WRAPPER_REVISION/galaxy/mzml2isa/wrapper.py -o /usr/local/bin/wrapper.py && \
